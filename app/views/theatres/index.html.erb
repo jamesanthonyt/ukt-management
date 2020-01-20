@@ -1,14 +1,15 @@
 
 <h2>
   Membership List |
-  <%= link_to 'Add', new_theatre_path %>
+  <%= link_to new_theatre_path do %>
+    <i class="fas fa-plus"></i>
+  <% end %>
 </h2>
 
 <table class="table table-striped table-hover">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Theatre Name</th>
-      <th scope="col">Managed By</th>
       <th scope="col">Status</th>
     </tr>
   </thead>
@@ -16,7 +17,6 @@
     <% @theatres.each do |theatre| %>
     <tr>
       <td><%= link_to theatre.name, theatre_path(theatre) %></td>
-      <td><%= theatre.managed_by %></td>
       <td></td>
     </tr>
     <% end %>

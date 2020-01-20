@@ -1,11 +1,15 @@
 <h2>
-  <%= @theatre.name %> |
-  <%= link_to 'Edit', edit_theatre_path(@theatre.id)  %> |
-  <%= link_to 'Delete', theatre_path(@theatre), method: :delete %>
+  <%= @theatre.name %>
+  <%= "(#{@theatre.managed_by})" unless @theatre.managed_by.empty? %> |
+  <%= link_to edit_theatre_path(@theatre.id) do %>
+    <i class="fas fa-edit"></i>
+  <% end %> |
+  <%= link_to theatre_path(@theatre), method: :delete do %>
+    <i class="fas fa-trash-alt"></i>
+  <% end %>
 </h2>
 
 <ul class="list-group list-group-flush">
-  <li class="list-group-item"><strong>Managed by:</strong> <%= @theatre.managed_by %></li>
   <li class="list-group-item"><strong>Onboarded:</strong> [TBD]</li>
   <li class="list-group-item"><strong>AF Source Organisation:</strong> <%= @theatre.af_source_org_id %></li>
   <li class="list-group-item"><strong>Notes:</strong> <%= @theatre.notes %></li>
