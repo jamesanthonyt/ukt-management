@@ -1,7 +1,7 @@
 <%= simple_form_for(@theatre) do |f| %>
-  <%= f.input :name, label: "Theatre name:" %>
-  <%= f.input :managed_by, label: "Managed by:", placeholder: "e.g. ATG, HQ Theatres..." %>
-  <%= f.input :af_source_org_id, label: "AF source org id:" %>
-  <%= f.input :notes, label: "Notes:" %>
-  <%= f.submit %>
+  <%= f.input :name, label: "Theatre name" %>
+  <%= f.input :managed_by, label: "Managed by" %>
+  <%= f.input :af_source_org_id, label: "AF Source Org ID" %>
+  <%= f.input :notes, label: "Notes" %>
+  <%= f.submit class: "btn btn-success" %>
 <% end %>

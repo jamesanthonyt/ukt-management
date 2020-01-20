@@ -1,19 +1,24 @@
+
 <h2>
   Membership List |
   <%= link_to 'Add', new_theatre_path %>
 </h2>
 
-<table>
-  <tr>
-    <th>Theatre Name</th>
-    <th>Managed By</th>
-    <th>Status</th>
-  </tr>
-  <% @theatres.each do |theatre| %>
-  <tr>
-    <td><%= link_to theatre.name, theatre_path(theatre) %></td>
-    <td><%= theatre.managed_by %></td>
-    <td></td>
-  </tr>
-  <% end %>
+<table class="table table-striped table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Theatre Name</th>
+      <th scope="col">Managed By</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @theatres.each do |theatre| %>
+    <tr>
+      <td><%= link_to theatre.name, theatre_path(theatre) %></td>
+      <td><%= theatre.managed_by %></td>
+      <td></td>
+    </tr>
+    <% end %>
+  </tbody>
 </table>
