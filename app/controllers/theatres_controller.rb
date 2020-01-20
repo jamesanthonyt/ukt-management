@@ -20,19 +20,21 @@ class TheatresController < ApplicationController
 
   def update
     @theatre.update(theatre_params)
-    redirect_to theatre_path(@@theatre)
+    redirect_to theatre_path(@theatre)
   end
 
   def destroy
     @theatre.destroy
+    redirect_to theatres_path
   end
 
   private
 
   def set_theatre
-    @theatre = Theatre.find([params[:id]])
+    @theatre = Theatre.find(params[:id])
   end
 
   def theatre_params
     params.require(:theatre).permit(:name, :managed_by, :af_source_org_id, :notes)
+  end
 end

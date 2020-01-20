@@ -1,2 +1,16 @@
-<h1>Theatres#index</h1>
-<p>Find me in app/views/theatres/index.html.erb</p>
+<h2>Membership List</h2>
+
+<table>
+  <tr>
+    <th>Theatre Name</th>
+    <th>Managed By</th>
+    <th>Status</th>
+  </tr>
+  <% @theatres.each do |theatre| %>
+  <tr>
+    <td><%= link_to theatre.name, theatre_path(theatre) %></td>
+    <td><%= theatre.managed_by %></td>
+    <td></td>
+  </tr>
+  <% end %>
+</table>

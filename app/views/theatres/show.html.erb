@@ -1,2 +1,14 @@
-<h1>Theatres#show</h1>
-<p>Find me in app/views/theatres/show.html.erb</p>
+<h2>
+  <%= @theatre.name %> |
+  <%= link_to 'Edit', edit_theatre_path(@theatre.id)  %> |
+  <%= link_to 'Delete', theatre_path(@theatre), method: :delete %>
+</h2>
+
+<ul>
+  <li><strong>Managed by:</strong> <%= @theatre.managed_by %></li>
+  <li><strong>Onboarded:</strong> [TBD]</li>
+  <li><strong>AF Source Organisation:</strong> <%= @theatre.af_source_org_id %></li>
+  <li><strong>Notes:</strong> <%= @theatre.notes %></li>
+</ul>
+
+<%= link_to 'Back to all theatres', theatres_path %>
