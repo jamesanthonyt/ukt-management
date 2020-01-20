@@ -12,7 +12,7 @@ class TheatresController < ApplicationController
   end
 
   def create
-    @theatre.create(theatre_params)
+    @theatre = Theatre.create(theatre_params)
     redirect_to theatres_path
   end
 
