@@ -11,5 +11,16 @@
   <li class="list-group-item"><strong>Notes:</strong> <%= @performance_space.notes %></li>
 </ul>
 
-<%= link_to 'Edit this performance space', edit_theatre_performance_space_path(@theatre, @performance_space) %>
-<%= link_to 'Delete this performance space', theatre_performance_space_path(@theatre, @performance_space), method: :delete %>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <%= link_to 'Edit this performance space', edit_theatre_performance_space_path(@theatre, @performance_space) %>
+  </li>
+  <li class="list-group-item">
+    <%= link_to 'Delete this performance space', theatre_performance_space_path(@theatre, @performance_space), method: :delete %>
+  </li>
+  <li class="list-group-item">
+    <%= link_to 'Back to theatre', theatre_path(@theatre) %>
+  </li>
+</ul>
+
+

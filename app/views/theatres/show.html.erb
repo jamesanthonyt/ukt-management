@@ -15,8 +15,6 @@
   <li class="list-group-item"><strong>Notes:</strong> <%= @theatre.notes %></li>
 </ul>
 
-<%= link_to 'Back to all theatres', theatres_path %>
-
 <table class="table table-striped table-hover">
   <thead class="thead-light">
     <tr>
@@ -36,4 +34,12 @@
   </tbody>
 </table>
 
-<%= link_to 'Add new performance space', new_theatre_performance_space_path(@theatre) %>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <%= link_to 'Add new performance space', new_theatre_performance_space_path(@theatre) %>
+  </li>
+  <li class="list-group-item">
+    <%= link_to 'Back to all theatres', theatres_path %>
+  </li>
+</ul>
+
