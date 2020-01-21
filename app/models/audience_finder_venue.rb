@@ -1,0 +1,2 @@
+class AudienceFinderVenue < ApplicationRecord
+end

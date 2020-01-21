@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_21_131427) do
+ActiveRecord::Schema.define(version: 2020_01_21_163740) do
+
+  create_table "af_venue_lookups", force: :cascade do |t|
+    t.integer "theatre_id"
+    t.integer "performance_space_id"
+    t.string "af_venue"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["performance_space_id"], name: "index_af_venue_lookups_on_performance_space_id"
+    t.index ["theatre_id"], name: "index_af_venue_lookups_on_theatre_id"
+  end
+
+  create_table "audience_finder_venues", force: :cascade do |t|
+    t.integer "srcorgid"
+    t.string "venue"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "performance_spaces", force: :cascade do |t|
     t.string "name"

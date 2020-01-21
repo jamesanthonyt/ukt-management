@@ -30,4 +30,74 @@ theatre_attributes = [
   }
 ]
 Theatre.create!(theatre_attributes)
-puts 'Finished!'
+puts 'Finished creating theatres!'
+
+theatre_one = Theatre.find(1)
+theatre_two = Theatre.find(2)
+theatre_three = Theatre.find(3)
+
+puts 'Creating performance spaces...'
+performance_space_attributes = [
+  {
+    name: 'Main space',
+    space_type: 'Main Auditorium',
+    capacity: 600,
+    programme: 'Only produced in-house',
+    grouping: 1,
+    include: true,
+    notes: '',
+    theatre_id: theatre_one.id
+  },
+  {
+    name: 'Studio',
+    space_type: 'Studio Space',
+    capacity: 145,
+    programme: 'More produced in-house',
+    grouping: 1,
+    include: true,
+    notes: '',
+    theatre_id: theatre_two.id
+  },
+  {
+    name: 'Cinema 1',
+    space_type: 'Cinema',
+    capacity: 340,
+    programme: 'Only presented/toured',
+    grouping: 4,
+    include: true,
+    notes: '',
+    theatre_id: theatre_three.id
+  }
+]
+PerformanceSpace.create!(performance_space_attributes)
+puts 'Finished creating performance spaces!'
+
+puts 'Creating audience finder venues...'
+audience_finder_venue_attributes = [
+  {
+    srcorgid: theatre_one.af_source_org_id,
+    venue: 'Space A'
+  },
+  {
+    srcorgid: theatre_one.af_source_org_id,
+    venue: 'Space B'
+  },
+  {
+    srcorgid: theatre_two.af_source_org_id,
+    venue: 'Space A'
+  },
+  {
+    srcorgid: theatre_two.af_source_org_id,
+    venue: 'Space B'
+  },
+  {
+    srcorgid: theatre_three.af_source_org_id,
+    venue: 'Space A'
+  },
+  {
+    srcorgid: theatre_three.af_source_org_id,
+    venue: 'Space B'
+  }
+]
+AudienceFinderVenue.create!(audience_finder_venue_attributes)
+puts 'Finished creating audience finder venues!'

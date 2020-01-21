@@ -1,0 +1,2 @@
+class AfVenueLookup < ApplicationRecord
+end
