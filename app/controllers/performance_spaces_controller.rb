@@ -17,17 +17,19 @@ class PerformanceSpacesController < ApplicationController
     @performance_space = PerformanceSpace.new(performance_space_params)
     @performance_space.theatre_id = @theatre.id
     @performance_space.save
+    redirect_to theatre_path(@theatre)
   end
 
   def edit; end
 
   def update
     @performance_space.update(performance_space_params)
+    redirect_to theatre_path(@theatre)
   end
 
   def destroy
     @performance_space.destroy
-    redirect_to theatres_path
+    redirect_to theatre_path(@theatre)
   end
 
   private
@@ -40,8 +42,7 @@ class PerformanceSpacesController < ApplicationController
   def performance_space_params
     params.require(:performance_space).permit(
       :name,
-      :type,
-      :type_other,
+      :space_type,
       :capacity,
       :programme,
       :grouping,

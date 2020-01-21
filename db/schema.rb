@@ -14,12 +14,11 @@ ActiveRecord::Schema.define(version: 2020_01_21_131427) do
 
   create_table "performance_spaces", force: :cascade do |t|
     t.string "name"
-    t.string "type"
-    t.string "type_other"
+    t.string "space_type"
     t.integer "capacity"
     t.string "programme"
     t.string "grouping"
-    t.boolean "include"
+    t.boolean "include", default: true
     t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

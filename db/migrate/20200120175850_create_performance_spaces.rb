@@ -2,12 +2,11 @@ class CreatePerformanceSpaces < ActiveRecord::Migration[5.2]
   def change
     create_table :performance_spaces do |t|
       t.string :name
-      t.string :type
-      t.string :type_other
+      t.string :space_type
       t.integer :capacity
       t.string :programme
       t.string :grouping
-      t.boolean :include
+      t.boolean :include, default: true
       t.text :notes
 
       t.timestamps
