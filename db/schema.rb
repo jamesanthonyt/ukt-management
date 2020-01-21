@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_20_124608) do
+ActiveRecord::Schema.define(version: 2020_01_20_175850) do
+
+  create_table "performance_spaces", force: :cascade do |t|
+    t.string "name"
+    t.string "type"
+    t.string "type_other"
+    t.integer "capacity"
+    t.string "programme"
+    t.string "grouping"
+    t.boolean "include"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "theatres", force: :cascade do |t|
     t.string "name"
