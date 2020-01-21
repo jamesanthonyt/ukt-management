@@ -5,7 +5,9 @@ class TheatresController < ApplicationController
     @theatres = Theatre.all
   end
 
-  def show; end
+  def show
+    @performance_spaces = PerformanceSpace.where(theatre_id: @theatre)
+  end
 
   def new
     @theatre = Theatre.new

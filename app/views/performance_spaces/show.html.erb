@@ -1,0 +1,15 @@
+<h2>
+  <%= @theatre.name %>: <%= @performance_space.name %>
+</h2>
+
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"><strong>Type:</strong> <%= @performance_space.type %></li>
+  <li class="list-group-item"><strong>Capacity:</strong> <%= @performance_space.capacity %></li>
+  <li class="list-group-item"><strong>Programme:</strong> <%= @performance_space.programme %></li>
+  <li class="list-group-item"><strong>Grouping:</strong> <%= @performance_space.grouping %></li>
+  <li class="list-group-item"><strong>Include:</strong> <%= @performance_space.include %></li>
+  <li class="list-group-item"><strong>Notes:</strong> <%= @performance_space.notes %></li>
+</ul>
+
+<%= link_to 'Edit this performance space', edit_theatre_performance_space_path(@theatre, @performance_space) %>
+<%= link_to 'Delete this performance space', theatre_performance_space_path(@theatre, @performance_space), method: :delete %>
