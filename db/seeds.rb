@@ -5,21 +5,29 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Theatre.create(
-  name: 'Theatre Royal Somewhere',
-  managed_by: '',
-  af_source_org_id: 1023,
-  notes: 'These guys are great!'
-)
-Theatre.create(
-  name: 'The Somewhere Palace',
-  managed_by: '',
-  af_source_org_id: 1027,
-  notes: 'These guys are annoying'
-)
-Theatre.create(
-  name: 'Studio Random',
-  managed_by: '',
-  af_source_org_id: 1030,
-  notes: 'Require some hand holding'
-)
+puts 'Cleaning database...'
+Theatre.destroy_all
+
+puts 'Creating theatres...'
+theatre_attributes = [
+  {
+    name: 'Theatre Royal Somewhere',
+    managed_by: 'Independent',
+    af_source_org_id: 1023,
+    notes: 'These guys are great!'
+  },
+  {
+    name: 'The Somewhere Palace',
+    managed_by: '',
+    af_source_org_id: 1027,
+    notes: 'These guys are annoying'
+  },
+  {
+    name: 'Studio Random',
+    managed_by: '',
+    af_source_org_id: 1030,
+    notes: 'Require some hand holding'
+  }
+]
+Theatre.create!(theatre_attributes)
+puts 'Finished!'
