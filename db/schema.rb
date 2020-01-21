@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_20_175850) do
+ActiveRecord::Schema.define(version: 2020_01_21_131427) do
 
   create_table "performance_spaces", force: :cascade do |t|
     t.string "name"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 2020_01_20_175850) do
     t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "theatre_id"
+    t.index ["theatre_id"], name: "index_performance_spaces_on_theatre_id"
   end
 
   create_table "theatres", force: :cascade do |t|
