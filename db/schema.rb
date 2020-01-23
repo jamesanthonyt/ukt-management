@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2020_01_21_163740) do
     t.integer "theatre_id"
     t.integer "performance_space_id"
     t.string "af_venue"
+    t.integer "af_source_org_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["performance_space_id"], name: "index_af_venue_lookups_on_performance_space_id"

@@ -72,32 +72,32 @@ performance_space_attributes = [
 PerformanceSpace.create!(performance_space_attributes)
 puts 'Finished creating performance spaces!'
 
-puts 'Creating audience finder venues...'
-audience_finder_venue_attributes = [
+puts 'Creating audience finder lookup venues...'
+af_venue_lookup_attributes = [
   {
-    srcorgid: theatre_one.af_source_org_id,
-    venue: 'Space A'
+    af_source_org_id: theatre_one.af_source_org_id,
+    af_venue: 'Space A'
   },
   {
-    srcorgid: theatre_one.af_source_org_id,
-    venue: 'Space B'
+    af_source_org_id: theatre_one.af_source_org_id,
+    af_venue: 'Space B'
   },
   {
-    srcorgid: theatre_two.af_source_org_id,
-    venue: 'Space A'
+    af_source_org_id: theatre_two.af_source_org_id,
+    af_venue: 'Space A'
   },
   {
-    srcorgid: theatre_two.af_source_org_id,
-    venue: 'Space B'
+    af_source_org_id: theatre_two.af_source_org_id,
+    af_venue: 'Space B'
   },
   {
-    srcorgid: theatre_three.af_source_org_id,
-    venue: 'Space A'
+    af_source_org_id: theatre_three.af_source_org_id,
+    af_venue: 'Space A'
   },
   {
-    srcorgid: theatre_three.af_source_org_id,
-    venue: 'Space B'
+    af_source_org_id: theatre_three.af_source_org_id,
+    af_venue: 'Space B'
   }
 ]
-AudienceFinderVenue.create!(audience_finder_venue_attributes)
-puts 'Finished creating audience finder venues!'
+AfVenueLookup.create!(af_venue_lookup_attributes)
+puts 'Finished creating audience finder lookup venues!'
