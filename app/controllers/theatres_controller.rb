@@ -43,4 +43,8 @@ class TheatresController < ApplicationController
   def theatre_params
     params.require(:theatre).permit(:name, :managed_by, :af_source_org_id, :notes)
   end
+
+  def theatre_status(theatre)
+    'Awaiting perf space details' if theatre.performance_spaces.count.zero?
+  end
 end

@@ -17,22 +17,24 @@
   Performance spaces | <%= link_to 'Add new performance space', new_theatre_performance_space_path(@theatre) %>
 </h5>
 
-<table class="table table-striped table-hover mt-3">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">Performance Space</th>
-      <th scope="col">Grouping</th>
-      <th scope="col">Include?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @performance_spaces.each do |space| %>
-    <tr>
-      <td><%= link_to space.name, theatre_performance_space_path(@theatre, space.id) %></td>
-      <td><%= space.grouping %></td>
-      <td><%= space.include %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+<% if @performance_spaces.count > 0 %>
+  <table class="table table-striped table-hover mt-3">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Performance Space</th>
+        <th scope="col">Grouping</th>
+        <th scope="col">Include?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @performance_spaces.each do |space| %>
+      <tr>
+        <td><%= link_to space.name, theatre_performance_space_path(@theatre, space.id) %></td>
+        <td><%= space.grouping %></td>
+        <td><%= space.include %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
 
