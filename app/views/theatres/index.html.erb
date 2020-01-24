@@ -13,7 +13,7 @@
     <% @theatres.each do |theatre| %>
     <tr>
       <td><%= link_to theatre.name, theatre_path(theatre) %></td>
-      <td></td>
+      <td><%= theatre.status %></td>
     </tr>
     <% end %>
   </tbody>

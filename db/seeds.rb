@@ -15,6 +15,7 @@ theatre_attributes = [
     managed_by: 'Independent',
     af_source_org_id: 1023,
     include: true,
+    status: 'new',
     notes: 'These guys are great!'
   },
   {
@@ -22,6 +23,7 @@ theatre_attributes = [
     managed_by: '',
     af_source_org_id: 1027,
     include: true,
+    status: 'new',
     notes: 'These guys are annoying'
   },
   {
@@ -29,6 +31,7 @@ theatre_attributes = [
     managed_by: '',
     af_source_org_id: 1030,
     include: true,
+    status: 'new',
     notes: 'Require some hand holding'
   }
 ]
@@ -75,32 +78,32 @@ performance_space_attributes = [
 PerformanceSpace.create!(performance_space_attributes)
 puts 'Finished creating performance spaces!'
 
-puts 'Creating audience finder lookup venues...'
-af_venue_lookup_attributes = [
-  {
-    af_source_org_id: theatre_one.af_source_org_id,
-    af_venue: 'Space A'
-  },
-  {
-    af_source_org_id: theatre_one.af_source_org_id,
-    af_venue: 'Space B'
-  },
-  {
-    af_source_org_id: theatre_two.af_source_org_id,
-    af_venue: 'Space A'
-  },
-  {
-    af_source_org_id: theatre_two.af_source_org_id,
-    af_venue: 'Space B'
-  },
-  {
-    af_source_org_id: theatre_three.af_source_org_id,
-    af_venue: 'Space A'
-  },
-  {
-    af_source_org_id: theatre_three.af_source_org_id,
-    af_venue: 'Space B'
-  }
-]
-AfVenueLookup.create!(af_venue_lookup_attributes)
-puts 'Finished creating audience finder lookup venues!'
+# puts 'Creating audience finder lookup venues...'
+# af_venue_lookup_attributes = [
+#   {
+#     af_source_org_id: theatre_one.af_source_org_id,
+#     af_venue: 'Space A'
+#   },
+#   {
+#     af_source_org_id: theatre_one.af_source_org_id,
+#     af_venue: 'Space B'
+#   },
+#   {
+#     af_source_org_id: theatre_two.af_source_org_id,
+#     af_venue: 'Space A'
+#   },
+#   {
+#     af_source_org_id: theatre_two.af_source_org_id,
+#     af_venue: 'Space B'
+#   },
+#   {
+#     af_source_org_id: theatre_three.af_source_org_id,
+#     af_venue: 'Space A'
+#   },
+#   {
+#     af_source_org_id: theatre_three.af_source_org_id,
+#     af_venue: 'Space B'
+#   }
+# ]
+# AfVenueLookup.create!(af_venue_lookup_attributes)
+# puts 'Finished creating audience finder lookup venues!'
