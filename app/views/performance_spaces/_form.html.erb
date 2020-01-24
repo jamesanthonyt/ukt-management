@@ -16,7 +16,9 @@
     'More presented/toured',
     'Only presented/toured'
   ] %>
-  <%= f.input :include, label: "Include?" %>
+  <% if @performance_space.persisted? %>
+    <%= f.input :include, label: "Include in analyses?" %>
+  <% end %>
   <%= f.input :notes %>
   <%= f.submit class: "btn btn-success" %>
   <%= link_to "Cancel", :back %>

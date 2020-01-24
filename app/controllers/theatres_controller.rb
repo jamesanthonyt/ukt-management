@@ -14,8 +14,12 @@ class TheatresController < ApplicationController
   end
 
   def create
-    @theatre = Theatre.create(theatre_params)
-    redirect_to theatres_path
+    @theatre = Theatre.new(theatre_params)
+    unless @theatre.save
+      render :new
+    else
+      redirect_to theatres_path
+    end
   end
 
   def edit; end

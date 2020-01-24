@@ -2,7 +2,10 @@
   <%= f.input :name, label: "Theatre name" %>
   <%= f.input :managed_by, label: "Managed by" %>
   <%= f.input :af_source_org_id, label: "AF Source Org ID" %>
+  <% if @theatre.persisted? %>
+    <%= f.input :include, label: "Include in project?" %>
+  <% end %>
   <%= f.input :notes, label: "Notes" %>
-  <%= f.submit class: "btn btn-success" %>
+  <%= f.submit "Add member", class: "btn btn-success" %>
   <%= link_to "Cancel", :back %>
 <% end %>

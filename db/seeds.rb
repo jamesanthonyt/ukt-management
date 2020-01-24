@@ -14,18 +14,21 @@ theatre_attributes = [
     name: 'Theatre Royal Somewhere',
     managed_by: 'Independent',
     af_source_org_id: 1023,
+    include: true,
     notes: 'These guys are great!'
   },
   {
     name: 'The Somewhere Palace',
     managed_by: '',
     af_source_org_id: 1027,
+    include: true,
     notes: 'These guys are annoying'
   },
   {
     name: 'Studio Random',
     managed_by: '',
     af_source_org_id: 1030,
+    include: true,
     notes: 'Require some hand holding'
   }
 ]

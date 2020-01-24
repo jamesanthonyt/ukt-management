@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2020_01_21_163740) do
     t.string "name"
     t.string "managed_by"
     t.integer "af_source_org_id"
+    t.boolean "include", default: true
     t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -4,6 +4,7 @@ class CreateTheatres < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :managed_by
       t.integer :af_source_org_id
+      t.boolean :include, default: true
       t.text :notes
 
       t.timestamps
