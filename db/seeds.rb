@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'Cleaning database...'
 Theatre.destroy_all
+PerformanceSpace.destroy_all
 
 puts 'Creating theatres...'
 theatre_attributes = [
@@ -78,32 +79,32 @@ performance_space_attributes = [
 PerformanceSpace.create!(performance_space_attributes)
 puts 'Finished creating performance spaces!'
 
-# puts 'Creating audience finder lookup venues...'
-# af_venue_lookup_attributes = [
-#   {
-#     af_source_org_id: theatre_one.af_source_org_id,
-#     af_venue: 'Space A'
-#   },
-#   {
-#     af_source_org_id: theatre_one.af_source_org_id,
-#     af_venue: 'Space B'
-#   },
-#   {
-#     af_source_org_id: theatre_two.af_source_org_id,
-#     af_venue: 'Space A'
-#   },
-#   {
-#     af_source_org_id: theatre_two.af_source_org_id,
-#     af_venue: 'Space B'
-#   },
-#   {
-#     af_source_org_id: theatre_three.af_source_org_id,
-#     af_venue: 'Space A'
-#   },
-#   {
-#     af_source_org_id: theatre_three.af_source_org_id,
-#     af_venue: 'Space B'
-#   }
-# ]
-# AfVenueLookup.create!(af_venue_lookup_attributes)
-# puts 'Finished creating audience finder lookup venues!'
+puts 'Creating AF venues...'
+af_venue_attributes = [
+  {
+    theatre_id: theatre_one.id,
+    venue_name: 'Space A'
+  },
+  {
+    theatre_id: theatre_one.id,
+    venue_name: 'Space B'
+  },
+  {
+    theatre_id: theatre_two.id,
+    venue_name: 'Space A'
+  },
+  {
+    theatre_id: theatre_two.id,
+    venue_name: 'Space B'
+  },
+  {
+    theatre_id: theatre_three.id,
+    venue_name: 'Space A'
+  },
+  {
+    theatre_id: theatre_three.id,
+    venue_name: 'Space B'
+  }
+]
+AfVenue.create!(af_venue_attributes)
+puts 'Finished creating AF venues!'

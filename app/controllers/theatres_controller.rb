@@ -6,8 +6,9 @@ class TheatresController < ApplicationController
   end
 
   def show
-    @performance_spaces = PerformanceSpace.where(theatre_id: @theatre)
     add_breadcrumb '< All Theatres', theatres_path
+    @performance_spaces = PerformanceSpace.where(theatre_id: @theatre)
+    @af_venues = AfVenue.where(theatre_id: @theatre)
   end
 
   def new
@@ -16,10 +17,10 @@ class TheatresController < ApplicationController
 
   def create
     @theatre = Theatre.new(theatre_params)
-    unless @theatre.save
-      render :new
-    else
+    if @theatre.save
       redirect_to theatres_path
+    else
+      render :new
     end
   end
 
