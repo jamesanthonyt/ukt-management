@@ -7,6 +7,7 @@ class TheatresController < ApplicationController
 
   def show
     @performance_spaces = PerformanceSpace.where(theatre_id: @theatre)
+    add_breadcrumb '< All Theatres', theatres_path
   end
 
   def new

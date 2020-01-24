@@ -5,7 +5,9 @@ class PerformanceSpacesController < ApplicationController
     @performance_spaces = PerformanceSpace.where(theatre_id: @theatre)
   end
 
-  def show; end
+  def show
+    add_breadcrumb "< #{@theatre.name}", theatre_path(@theatre)
+  end
 
   def new
     @theatre = Theatre.find(params[:theatre_id])
@@ -16,7 +18,7 @@ class PerformanceSpacesController < ApplicationController
     @theatre = Theatre.find(params[:theatre_id])
     @performance_space = PerformanceSpace.new(performance_space_params)
     @performance_space.theatre_id = @theatre.id
-    assign_grouping(@performance_space)
+    assign_group(@performance_space)
     if @performance_space.save
       redirect_to theatre_path(@theatre)
     else
@@ -28,7 +30,9 @@ class PerformanceSpacesController < ApplicationController
 
   def update
     if @performance_space.update(performance_space_params)
-      redirect_to redirect_to theatre_path(@theatre)
+      assign_group(@performance_space)
+      @performance_space.save
+      redirect_to theatre_path(@theatre)
     else
       render :edit
     end
@@ -52,12 +56,13 @@ class PerformanceSpacesController < ApplicationController
       :space_type,
       :capacity,
       :programme,
+      :grouping,
       :include,
       :notes
     )
   end
 
-  def assign_grouping(performance_space)
+  def assign_group(performance_space)
     if performance_space.space_type == 'Other' || performance_space.space_type == 'Cinema' || performance_space.space_type == 'Cabaret Space'
       performance_space.grouping = 6
     elsif performance_space.capacity < 200

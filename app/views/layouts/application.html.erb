@@ -13,10 +13,19 @@
   </head>
 
   <body>
-    <nav class="navbar mb-4">
-      <h1><%= link_to 'UK Theatre: Project Manager', root_path %></h1>
-    </nav>
     <div class="container">
+    <nav class="navbar mb-4 p-2">
+      <div class="col-3">
+        <%= render_breadcrumbs :separator => ' < ' %>
+      </div>
+      <div class="col-6">
+        <h1 class="text-center">UK Theatre: Project Manager</h1>
+      </div>
+      <div class="col-3">
+
+      </div>
+
+    </nav>
 
       <%= yield %>
 
