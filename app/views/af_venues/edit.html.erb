@@ -24,3 +24,4 @@
     <% end %>
   </tbody>
 </table>
+<%= select_tag 'performance_space_id', options_for_select(@theatre.performance_spaces.collect{ |space| [space.name, space.id] }) %>
