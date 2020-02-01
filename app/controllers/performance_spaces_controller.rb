@@ -38,11 +38,6 @@ class PerformanceSpacesController < ApplicationController
     end
   end
 
-  def destroy
-    @performance_space.destroy
-    redirect_to theatre_path(@theatre)
-  end
-
   private
 
   def set_performance_space

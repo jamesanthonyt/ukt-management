@@ -31,11 +31,6 @@ class TheatresController < ApplicationController
     redirect_to theatre_path(@theatre)
   end
 
-  def destroy
-    @theatre.destroy
-    redirect_to theatres_path
-  end
-
   private
 
   def set_theatre

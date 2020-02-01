@@ -1,7 +1,6 @@
 <h2>
   <%= @theatre.name %>: <%= @performance_space.name %> |
-  <%= link_to 'Edit', edit_theatre_performance_space_path(@theatre, @performance_space) %> |
-  <%= link_to 'Delete', theatre_performance_space_path(@theatre, @performance_space), method: :delete %>
+  <%= link_to 'Edit', edit_theatre_performance_space_path(@theatre, @performance_space) %>
 </h2>
 
 <ul class="list-group list-group-flush mt-3 mb-3">
