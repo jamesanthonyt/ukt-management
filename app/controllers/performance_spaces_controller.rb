@@ -26,10 +26,15 @@ class PerformanceSpacesController < ApplicationController
     end
   end
 
-  def edit; end
+  def edit
+    @af_venues = @theatre.af_venues
+  end
 
   def update
+    @selected_venues = AfVenue.where(id: params[:performance_space]['af_venues']
+      .reject(&:empty?))
     if @performance_space.update(performance_space_params)
+      @performance_space.af_venues = @selected_venues
       assign_group(@performance_space)
       @performance_space.save
       redirect_to theatre_path(@theatre)

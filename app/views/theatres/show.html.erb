@@ -36,34 +36,4 @@
   </table>
 <% end %>
 
-<h5 class="mt-4">
-  AF venues | <%= link_to 'Edit mapping', theatre_af_venues_path(@theatre) %>
-</h5>
-
-<% if @af_venues.count > 0 %>
-  <table class="table table-striped table-hover mt-3">
-    <thead class="thead-light">
-      <tr>
-        <th scope="col">Audience Finder Venue</th>
-        <th scope="col">Performance Space</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @af_venues.each do |venue| %>
-        <tr>
-          <td><%= venue.venue_name %></td>
-          <% if venue.performance_space_id.nil? %>
-            <td></td>
-          <% else %>
-            <td>
-              <%= PerformanceSpace.find(venue.performance_space_id) %>
-            </td>
-          <% end %>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-<% end %>
-
-
 
