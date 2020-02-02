@@ -1,4 +1,5 @@
 class AfVenue < ApplicationRecord
-  belongs_to :theatre
-  validates :theatre_id, presence: true
+  has_one :af_venue_mapping
+  belongs_to :source_org
+  validates :name, uniqueness: { scope: :source_org_id }
 end

@@ -1,7 +1,7 @@
 class Theatre < ApplicationRecord
+  belongs_to :source_org
   has_many :performance_spaces
-  has_many :af_venues
+  has_many :af_venues, through: :source_org
   validates :name, presence: true, uniqueness: true
-  validates :af_source_org_id, uniqueness: true
-  validates :status, presence: true
+  validates :source_org_id, uniqueness: true
 end

@@ -4,11 +4,21 @@
 </h2>
 
 <ul class="list-group list-group-flush mt-3 mb-3">
-  <li class="list-group-item"><strong>Managed by:</strong> <%= @theatre.managed_by %></li>
-  <li class="list-group-item"><strong>AF Source Organisation:</strong> <%= @theatre.af_source_org_id %></li>
-  <li class="list-group-item"><strong>Included in analysis:</strong> <%= @theatre.include %></li>
-  <li class="list-group-item"><strong>Status:</strong> <%= @theatre.status %></li>
-  <li class="list-group-item"><strong>Notes:</strong> <%= @theatre.notes %></li>
+  <li class="list-group-item">
+    <strong>Type:</strong> <%= @theatre.management %>
+  </li>
+  <li class="list-group-item">
+    <strong>AF Source Organisation:</strong> <%= @theatre.source_org.name %>
+  </li>
+  <li class="list-group-item">
+    <strong>Included in analysis:</strong> <%= @theatre.include %>
+  </li>
+  <li class="list-group-item">
+    <strong>Status:</strong> <%= @theatre.status %>
+  </li>
+  <li class="list-group-item">
+    <strong>Notes:</strong> <%= @theatre.notes %>
+  </li>
 </ul>
 
 <h5 class="mt-4">
@@ -21,6 +31,7 @@
       <tr>
         <th scope="col">Performance Space</th>
         <th scope="col">Grouping</th>
+        <th scope="col">Mapped?</th>
         <th scope="col">Include?</th>
       </tr>
     </thead>
@@ -28,7 +39,8 @@
       <% @performance_spaces.each do |space| %>
       <tr>
         <td><%= link_to space.name, theatre_performance_space_path(@theatre, space.id) %></td>
-        <td><%= space.grouping %></td>
+        <td><%= group_name(space.grouping) %></td>
+        <td><%= space.af_venue_mappings.present? %></td>
         <td><%= space.include %></td>
       </tr>
       <% end %>

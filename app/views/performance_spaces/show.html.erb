@@ -7,7 +7,18 @@
   <li class="list-group-item"><strong>Type:</strong> <%= @performance_space.space_type %></li>
   <li class="list-group-item"><strong>Capacity:</strong> <%= @performance_space.capacity %></li>
   <li class="list-group-item"><strong>Programme:</strong> <%= @performance_space.programme %></li>
-  <li class="list-group-item"><strong>Grouping:</strong> <%= @performance_space.grouping %></li>
+  <li class="list-group-item"><strong>Grouping:</strong> <%= group_name(@performance_space.grouping) %></li>
+  <li class="list-group-item"><strong>AF Venues:</strong>
+    <% if @af_venues.present? %>
+      <% @af_venues.each do |venue| venue.name %>
+        <div>
+          <p class="ml-5 mb-0"><%= venue.name %></p>
+        </div>
+      <% end %>
+    <% else %>
+      <span>NO DATA</span>
+    <% end %>
+  </li>
   <li class="list-group-item"><strong>Include:</strong> <%= @performance_space.include %></li>
   <li class="list-group-item"><strong>Notes:</strong> <%= @performance_space.notes %></li>
 </ul>

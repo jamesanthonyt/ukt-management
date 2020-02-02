@@ -7,12 +7,12 @@ class TheatresController < ApplicationController
 
   def show
     add_breadcrumb '< All Theatres', theatres_path
-    @performance_spaces = PerformanceSpace.where(theatre_id: @theatre)
-    @af_venues = AfVenue.where(theatre_id: @theatre)
+    @performance_spaces = @theatre.performance_spaces
   end
 
   def new
     @theatre = Theatre.new
+    @source_orgs = SourceOrg.all
   end
 
   def create
@@ -27,8 +27,11 @@ class TheatresController < ApplicationController
   def edit; end
 
   def update
-    @theatre.update(theatre_params)
-    redirect_to theatre_path(@theatre)
+    if @theatre.update(theatre_params)
+      redirect_to theatre_path(@theatre)
+    else
+      render :edit
+    end
   end
 
   private
@@ -38,7 +41,7 @@ class TheatresController < ApplicationController
   end
 
   def theatre_params
-    params.require(:theatre).permit(:name, :managed_by, :af_source_org_id, :notes)
+    params.require(:theatre).permit(:name, :management, :source_org_id, :notes)
   end
 
   def theatre_status(theatre)

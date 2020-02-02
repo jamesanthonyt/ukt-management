@@ -1,12 +1,10 @@
 class PerformanceSpacesController < ApplicationController
   before_action :set_performance_space, except: [:new, :create]
 
-  def index
-    @performance_spaces = PerformanceSpace.where(theatre_id: @theatre)
-  end
-
   def show
     add_breadcrumb "< #{@theatre.name}", theatre_path(@theatre)
+    @af_venues = AfVenue.joins(:af_venue_mapping)
+                        .where(af_venue_mappings: { performance_space_id: @performance_space })
   end
 
   def new
@@ -26,15 +24,14 @@ class PerformanceSpacesController < ApplicationController
     end
   end
 
-  def edit
-    @af_venues = @theatre.af_venues
-  end
+  def edit; end
 
   def update
-    @selected_venues = AfVenue.where(id: params[:performance_space]['af_venues']
-      .reject(&:empty?))
+    # Need to deactivate any taken af venues from form and re-render the
+    # form if the validation is not met?
+    @mapped_venues = AfVenue.where(id: params[:performance_space]['af_venue_mappings'].reject(&:empty?))
     if @performance_space.update(performance_space_params)
-      @performance_space.af_venues = @selected_venues
+      @performance_space.af_venues = @mapped_venues
       assign_group(@performance_space)
       @performance_space.save
       redirect_to theatre_path(@theatre)
