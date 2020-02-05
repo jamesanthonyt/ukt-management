@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_01_24_160600) do
 
   create_table "af_venue_mappings", force: :cascade do |t|
-    t.integer "af_venue_id"
+    t.string "af_venue_id"
     t.integer "performance_space_id"
     t.integer "source_org_id"
     t.datetime "created_at", null: false
@@ -23,9 +23,10 @@ ActiveRecord::Schema.define(version: 2020_01_24_160600) do
     t.index ["source_org_id"], name: "index_af_venue_mappings_on_source_org_id"
   end
 
-  create_table "af_venues", force: :cascade do |t|
+  create_table "af_venues", id: :string, force: :cascade do |t|
     t.string "name"
     t.integer "source_org_id"
+    t.boolean "deleted", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["source_org_id"], name: "index_af_venues_on_source_org_id"

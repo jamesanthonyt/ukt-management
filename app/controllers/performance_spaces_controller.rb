@@ -1,19 +1,19 @@
 class PerformanceSpacesController < ApplicationController
-  before_action :set_performance_space, except: [:new, :create]
+  before_action :set_theatre, only: [:new, :create]
+  before_action :set_performance_space, only: [:show, :edit, :update]
 
   def show
     add_breadcrumb "< #{@theatre.name}", theatre_path(@theatre)
     @af_venues = AfVenue.joins(:af_venue_mapping)
-                        .where(af_venue_mappings: { performance_space_id: @performance_space })
+                        .where(af_venue_mappings: { performance_space_id:
+                          @performance_space })
   end
 
   def new
-    @theatre = Theatre.find(params[:theatre_id])
     @performance_space = PerformanceSpace.new
   end
 
   def create
-    @theatre = Theatre.find(params[:theatre_id])
     @performance_space = PerformanceSpace.new(performance_space_params)
     @performance_space.theatre_id = @theatre.id
     assign_group(@performance_space)
@@ -27,11 +27,7 @@ class PerformanceSpacesController < ApplicationController
   def edit; end
 
   def update
-    # Need to deactivate any taken af venues from form and re-render the
-    # form if the validation is not met?
-    @mapped_venues = AfVenue.where(id: params[:performance_space]['af_venue_mappings'].reject(&:empty?))
     if @performance_space.update(performance_space_params)
-      @performance_space.af_venues = @mapped_venues
       assign_group(@performance_space)
       @performance_space.save
       redirect_to theatre_path(@theatre)
@@ -42,8 +38,12 @@ class PerformanceSpacesController < ApplicationController
 
   private
 
-  def set_performance_space
+  def set_theatre
     @theatre = Theatre.find(params[:theatre_id])
+  end
+
+  def set_performance_space
+    set_theatre
     @performance_space = PerformanceSpace.find(params[:id])
   end
 
@@ -54,11 +54,11 @@ class PerformanceSpacesController < ApplicationController
       :capacity,
       :programme,
       :grouping,
-      :include,
       :notes
     )
   end
 
+  # This needs to be refactored
   def assign_group(performance_space)
     if performance_space.space_type == 'Other' || performance_space.space_type == 'Cinema' || performance_space.space_type == 'Cabaret Space'
       performance_space.grouping = 6
@@ -74,21 +74,4 @@ class PerformanceSpacesController < ApplicationController
       performance_space.grouping = 1
     end
   end
-  def display_group(space)
-    case space
-    when 1
-      'Major principally presenting performance space'
-    when 2
-      'Large principally presenting performance space'
-    when 3
-      'Medium principally presenting performance space'
-    when 4
-      'Principally producing performance space'
-    when 5
-      'Smaller performance space'
-    when 6
-      'Miscellaneous performance space'
-    end
-  end
-
 end

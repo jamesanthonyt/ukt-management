@@ -1,51 +1,12 @@
-<h2>
+<h3>
   <%= @theatre.name %> |
   <%= link_to 'Edit', edit_theatre_path(@theatre.id) %>
-</h2>
+</h3>
 
-<ul class="list-group list-group-flush mt-3 mb-3">
-  <li class="list-group-item">
-    <strong>Type:</strong> <%= @theatre.management %>
-  </li>
-  <li class="list-group-item">
-    <strong>AF Source Organisation:</strong> <%= @theatre.source_org.name %>
-  </li>
-  <li class="list-group-item">
-    <strong>Included in analysis:</strong> <%= @theatre.include %>
-  </li>
-  <li class="list-group-item">
-    <strong>Status:</strong> <%= @theatre.status %>
-  </li>
-  <li class="list-group-item">
-    <strong>Notes:</strong> <%= @theatre.notes %>
-  </li>
-</ul>
+<%= render 'theatre_details', theatre: @theatre %>
+<%= render 'perf_space_table', theatre: @theatre %>
+<%= render 'af_venue_table', theatre: @theatre %>
 
-<h5 class="mt-4">
-  Performance spaces | <%= link_to 'Add new performance space', new_theatre_performance_space_path(@theatre) %>
-</h5>
 
-<% if @performance_spaces.count > 0 %>
-  <table class="table table-striped table-hover mt-3">
-    <thead class="thead-light">
-      <tr>
-        <th scope="col">Performance Space</th>
-        <th scope="col">Grouping</th>
-        <th scope="col">Mapped?</th>
-        <th scope="col">Include?</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @performance_spaces.each do |space| %>
-      <tr>
-        <td><%= link_to space.name, theatre_performance_space_path(@theatre, space.id) %></td>
-        <td><%= group_name(space.grouping) %></td>
-        <td><%= space.af_venue_mappings.present? %></td>
-        <td><%= space.include %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
-<% end %>
 
 

@@ -1,0 +1,25 @@
+<ul class="list-group list-group-flush mt-3 mb-3">
+  <li class="list-group-item">
+    <strong>Type:</strong> <%= @theatre.management %>
+  </li>
+  <li class="list-group-item">
+    <strong>AF Source Organisation:</strong>
+      <% if @theatre.source_org.present? %>
+        <%= @theatre.source_org.name %>
+      <% end %>
+  </li>
+  <li class="list-group-item">
+    <strong>Include in reporting:</strong>
+      <% if @theatre.include == true %>
+        <span style="color: green;">Yes</span>
+      <% else %>
+        <span style="color: red;">No</span>
+      <% end %>
+  </li>
+  <li class="list-group-item">
+    <strong>Status:</strong> <%= status(@theatre) %>
+  </li>
+  <li class="list-group-item">
+    <strong>Notes:</strong> <%= @theatre.notes %>
+  </li>
+</ul>

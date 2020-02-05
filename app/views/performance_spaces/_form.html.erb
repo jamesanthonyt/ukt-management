@@ -16,11 +16,6 @@
     'More presented/toured',
     'Only presented/toured'
   ] %>
-  <%= f.input :af_venue_mappings, as: :check_boxes, collection:
-    AfVenue.where(source_org_id: @theatre.source_org_id) %>
-  <% if @performance_space.persisted? %>
-    <%= f.input :include, label: "Include in analyses?" %>
-  <% end %>
   <%= f.input :notes %>
   <%= f.submit class: "btn btn-success" %>
   <%= link_to "Cancel", :back %>
