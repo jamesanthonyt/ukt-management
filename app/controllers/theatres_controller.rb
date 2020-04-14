@@ -31,7 +31,7 @@ class TheatresController < ApplicationController
   end
 
   def update
-    if @theatre.update(theatre_params)
+    if @theatre.update!(theatre_params)
       redirect_to theatre_path(@theatre)
     else
       render :edit
@@ -54,6 +54,6 @@ class TheatresController < ApplicationController
   end
 
   def theatre_params
-    params.require(:theatre).permit(:name, :management, :source_org_id, :notes)
+    params.require(:theatre).permit(:name, :management, :source_org_id, :notes, :include)
   end
 end

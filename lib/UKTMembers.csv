@@ -1,0 +1,145 @@
+UKTID,Theatre_ID,MemberName,MemberType,SrcOrgId,Notes
+T1002,1,Arts Theatre,Independent,,
+T1003,2,Aylesbury Waterside Theatre,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1004,3,The Beck Theatre Hayes,HQ Theatres,1332,
+T1005,4,Belgrade Theatre,Independent,1107,
+T1006,5,Birmingham Hippodrome,Independent,1108,
+T1007,6,Birmingham Repertory Theatre,Independent,1072,
+T1008,7,Bradford Theatres,Independent,1273,
+T1009,8,Bristol Hippodrome,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1010,9,Bristol Old Vic,Independent,1095,
+T1011,10,Brunton Theatre,Independent,,Have not filled in set up request form
+T1012,11,Bush Theatre,Independent,1075,
+T1013,12,Buxton Opera House and Pavilion Arts Centre,Independent,1037,
+T1014,13,Cadogan Hall,Independent,1084,Only have one performance space according to survey - coding sheet not required
+T1015,14,Chichester Festival Theatre,Independent,1142,
+T1016,15,Chipping Norton Theatre,Independent,,Use ProVenue ticketing system which is nto currently supported by AF. In touch with Tickets.com
+T1017,16,Churchill Theatre Bromley,HQ Theatres,1333,
+T1018,17,Citizens Theatre,Independent,,Awaiting set up question responses and DUCA
+T1019,18,Theatr Clwyd,Independent,,Began set up a couple years ago but never saw it through - have not submitted a set up request
+T1022,19,Darlington Hippodome,Independent,1286,Only have one performance space according to survey - coding sheet not required
+T1025,20,Derby Theatre,Independent,1025,
+T1027,21,Dundee Repertory Theatre,Independent,,Will be part of next wave
+T1028,22,Edinburgh Playhouse,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1029,23,Capital Theatres,Independent,,Also known as Festival City Theatres Trust - have filled in set up request but we are awaiting responses to set up questions (possible financial blocker with ENTA)
+T1030,24,G Live,HQ Theatres,1335,
+T1032,25,Grand Opera House York,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1033,26,Grand Opera House Belfast,Independent,,Have more than one performance space but have not provided an EA for us to extract this
+T1035,27,Hackney Empire,Independent,1240,
+T1036,28,Hall for Cornwall,Independent,1260,
+T1037,29,Harrogate Theatre,Independent,1469,
+T1040,30,Hull Truck Theatre,Independent,1071,
+T1041,31,Hull New Theatre,Independent,1460,
+T1042,32,Kings Theatre and Theatre Royal Glasgow,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1043,33,Leas Cliff Hall Theatre Folkestone,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1044,34,Leeds Grand Theatre & Opera House,Independent,1300,
+T1044,35,City Varieties at Leeds Grand Theatre,1302,
+T1045,36,Leeds Playhouse,Independent,1113,
+T1046,37,Curve Theatre,Independent,1259,
+T1047,38,Lichfield Garrick,Independent,,On boarded as of Jan 2020 - need to be sent survey etc
+T1048,39,Lilian Baylis Theatre,Independent,1093,
+T1049,40,Live Theatre,Independent,1061,
+T1050,41,Liverpool Empire,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1052,42,Liverpool Everyman & Playhouse,Independent,1166,
+T1053,43,Lyceum Theatre Crewe,HQ Theatres,1334,
+T1055,44,Lyric Hammersmith,Independent,1020,
+T1056,45,Lyric Theatre Belfast,Independent,,Waiting on DUCA to be signed
+T1057,46,mac Birmingham,Independent,1059,
+T1058,47,Malvern Theatres Trust,Independent,1482,
+T1059,48,Mansfield Palace Theatre,Independent,1325,
+T1060,49,Marlowe Theatre,Independent,1369,
+T1061,50,Mayflower Theatre,Independent,1172,
+T1062,51,Mercury Theatre,Independent,5,
+T1063,52,Middlesbrough Theatre,Independent,,Middlesbrough Theatre is ticketed through Middlesborough Town Hall but they do not have an event attribute to split this out
+T1065,53,Milton Keynes Theatre,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1066,54,New Theatre Oxford,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1067,55,New Vic Theatre Newcastle-under-Lyme,Independent,1279,
+T1068,56,New Victoria Theatre Woking,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1069,57,New Wimbledon Theatre,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1070,58,New Wolsey Theatre Ipswich,Independent,14,
+T1072,59,Royal & Derngate,Independent,1132,
+T1073,60,Northern Stage,Independent,1032,
+T1074,61,Norwich Theatre Royal,Independent,1261,Only have one performance space according to survey - coding sheet not required
+T1075,62,Nottingham Playhouse,Independent,1153,
+T1076,63,Nottingham Theatre Royal & Royal Concert Hall,Independent,1154,
+T1077,64,Nuffield Southampton Theatres,Independent,,Have more than one performance space but they do not have these set up as one EA in Spektrix
+T1078,65,Octagon Theatre,Independent,1229,
+T1079,66,Oldham Coliseum,Independent,1056,
+T1081,67,Opera House Manchester,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1082,68,Orange Tree Theatre,Independent,1024,Only have one performance space according to survey - coding sheet not required
+T1083,69,Orchard Theatre Dartford,HQ Theatres,1336,Only have one performance space according to survey - coding sheet not required
+T1084,70,Oxford Playhouse,Independent,1288,
+T1085,71,Palace Theatre Manchester,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1086,72,Palace Theatre Redditch,Independent,1446,
+T1087,73,Park Theatre,Independent,1331,
+T1088,74,Pitlochry Festival Theatre,Independent,1452,
+T1089,75,Polka Theatre,Independent,1030,
+T1091,76,Poole Arts Trust,Independent,1195,
+T1092,77,Princess Theatre Torquay,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1093,78,Queen's Theatre Hornchurch,Independent,1290,
+T1095,79,Richmond Theatre,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1096,80,Rose Theatre Kingston,Independent,,Have more than one performance space but we cannot locate these within AF data
+T1097,81,Royal Court,Independent,1086,
+T1098,82,Royal Exchange Theatre,Independent,1101,
+T1099,83,Royal Lyceum Theatre Company,Independent,,Awaiting initial artform coding to be returned to complete onboarding
+T1100,84,Royal Shakespeare Company,Independent,1205,
+T1101,85,Wiltshire Creative,Independent,1389,
+T1102,86,Sheffield Theatres Trust,Independent,1167,
+T1103,87,Sherman Cymru,Independent,1207,
+T1104,88,Soho Theatre Company,Independent,1106,
+T1105,89,Southend Theatres - Cliffs Pavilion & Palace Theatre,HQ Theatres,1337,
+T1107,90,New Theatre Cardiff,Independent,1311,
+T1108,91,Stephen Joseph Theatre,Independent,1083,
+T1109,92,Sunderland Empire,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1111,93,Swindon Theatres - Wyvern Theatre & Swindon Arts Centre,HQ Theatres,1338,
+T1112,94,New Alexandra Theatre Birmingham,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1113,95,The Capitol Horsham,Independent,,Use Spektrix - waiting on client to answer set up questions
+T1116,96,The Minack Theatre Trust,Independent,1454,Only have one performance space according to survey - coding sheet not required
+T1118,97,Theatre by the Lake,Independent,1064,
+T1119,98,Theatre Royal Brighton,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1120,99,Theatre Royal Bury St Edmunds,Independent,13,
+T1122,100,Newcastle Theatre Royal,Independent,1257,
+T1124,101,Theatre Royal Winchester,Independent,1211,Only have one performance space according to survey - coding sheet not required
+T1126,102,Kiln Theatre,Independent,1019,Only have one performance space according to survey - coding sheet not required
+T1127,103,Unicorn Theatre,Independent,,Have more than one performance space but we cannot locate these within AF data
+T1128,104,Venue Cymru and Theatr Colwyn,Independent,1208,Have not completed any artform coding so will not be included by default
+T1129,105,Stoke Regent & Victoria Hall,ATG,,ATG - Only have one performance space according to survey - coding sheet not required
+T1131,106,Warwick Arts Centre,Independent,,WAC moved ticketing systems which replaced their old data - have not provided us with venue details form their ticketing system for us to split data
+T1132,107,Watermill Theatre,Independent,,Have more than one performance space but we cannot locate these within AF data
+T1133,108,Watford Colosseum,HQ Theatres,1339,
+T1134,109,Watford Palace Theatre,Independent,,
+T1135,110,White Rock Theatre,HQ Theatres,1340,
+T1137,111,Wycombe Swan,HQ Theatres,1341,
+T1138,112,York Theatre Royal,Independent,1100,
+T1139,113,Yvonne Arnaud Theatre,Independent,1451,
+T1140,114,The Woodville,Independent,,Use Red61 ticketing system which is nto currently supported by AF. In touch with Red61
+T1141,115,Landmark Ilfracombe & Queen's Theatre Barnstaple,SellaDoor,1449,
+T1143,116,Pavillion Theatre Rhyl,Independent,,
+T1145,117,The Mill at Sonning Theatre,Independent,,
+T1146,118,Bloomsbury Theatre (UCL Culture),Independent,1442,
+T1147,119,Cockpit Theatre,Independent,,
+T1148,120,Devonshire Park Theatre,Independent,,
+T1149,121,Greenwich Theatre,Independent,,
+T1150,122,Key Theatre,Independent,,
+T1151,123,Menier Chocolate Factory,Independent,,
+T1152,124,The Other Palace,Independent,,
+T1153,125,Wilton's Music Hall,Independent,,
+T2001,126,Almeida Theatre,Independent,1231,
+T2002,127,Arcola Theatre,Independent,,
+T2003,128,Barbican,Independent,,
+T2005,129,Donmar Warehouse,Independent,,
+T2006,130,English National Opera,Independent,,
+T2007,131,Everyman Theatre Cheltenham,Independent,1161,
+T2011,132,HOME,Independent,1073,
+T2013,133,Marina Theatre,Independent,1202,
+T2014,134,National Theatre,Independent,,
+T2015,135,Old Vic Theatre,Independent,1062,
+T2017,136,Regents Park Open Air Theatre,Independent,,Only have one performance space according to survey - coding sheet not required
+T2018,137,Riverfront Theatre,Independent,,
+T2020,138,Shakespeares Globe,Independent,,
+T2022,139,Theatre Royal Bath,Independent,,
+T2027,140,Newport Theatre,Independent,,
+T2028,141,St David's Hall,Independent,1280,
+T2029,142,Derby LIVE,Independent,1043,
+T2030,143,Theatre Royal Plymouth,Independent,1190,
+T2031,144,Theatre Royal Windsor,Independent,,

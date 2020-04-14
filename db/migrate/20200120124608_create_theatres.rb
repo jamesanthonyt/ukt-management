@@ -4,7 +4,7 @@ class CreateTheatres < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :management
       t.references :source_org, foreign_key: true
-      t.boolean :include, default: true
+      t.boolean :exclude, default: false
       t.string :status
       t.text :notes
 

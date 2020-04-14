@@ -1,0 +1,251 @@
+SurveyPerfSpaceName,UKTID,Theatre_ID,SurveyPerfSpaceType,SurveyMaxCapacity,SurveyProgramme,UKTGroupCode,Include
+Admirals Room,T1105,89,Studio Space,100,Only presented/toured,6,TRUE
+Adventure Theatre,T1089,75,Subsidiary Auditorium,100,More produced in-house,5,TRUE
+Albert Halls,T1078,65,Concert Hall,645,More presented/toured,2,TRUE
+Almeida Theatre,T2001,126,Main Auditorium,321,Only produced in-house,4,TRUE
+Assembly Rooms - 45 Suite,T2029,142,Cabaret Space,150,Only presented/toured,6,TRUE
+Assembly Rooms - Darwin,T2029,142,Subsidiary Auditorium,500,Only presented/toured,3,TRUE
+Assembly Rooms - Great Hall,T2029,142,Main Auditorium,2000,Only presented/toured,1,TRUE
+Attic,T1012,11,Other,60,More produced in-house,6,TRUE
+Aylesbury Waterside Theatre,T1003,2,Main Auditorium,1179,More presented/toured,1,TRUE
+B2,T1005,4,Studio Space,243,About the same,4,TRUE
+Ballroom,T1138,112,Other,120,About the same,6,TRUE
+Beck Theatre,T1004,3,Main Auditorium,600,Only presented/toured,2,TRUE
+Bellerby Studio,T1030,24,Studio Space,150,Only presented/toured,5,TRUE
+Bistro,T1073,60,Other,60,More presented/toured,6,TRUE
+Bloomsbury Studio,T1146,118,Studio Space,80,More presented/toured,5,TRUE
+Bloomsbury Theatre,T1146,118,Main Auditorium,541,More presented/toured,3,TRUE
+Bristol Hippodrome,T1009,8,Main Auditorium,1987,More presented/toured,1,TRUE
+Burton Taylor Studio,T1084,70,Studio Space,50,About the same,5,TRUE
+Buxton Opera House,T1013,12,Main Auditorium,901,More presented/toured,2,TRUE
+Churchill Studio,T1017,16,Studio Space,96,Only presented/toured,5,TRUE
+Churchill Theatre,T1017,16,Main Auditorium,781,Only presented/toured,2,TRUE
+Cinema 1,T2011,132,Cinema,250,More presented/toured,6,TRUE
+Cinemas 2-5,T2011,132,Cinema,150,More presented/toured,6,TRUE
+City Varieties Music Hall,T1044,34,Main Auditorium,467,More presented/toured,3,TRUE
+Cliffs Pavilion,T1105,89,Main Auditorium,2268,Only presented/toured,1,TRUE
+Clore Studio Theatre,T1127,103,Subsidiary Auditorium,150,More produced in-house,5,TRUE
+Concert Hall Poole,T1091,76,Concert Hall,2000,Only presented/toured,1,TRUE
+Convention Centre,T1037,29,Main Auditorium,2000,More presented/toured,1,TRUE
+Courtyard Theatre,T1045,36,Main Auditorium,403,More produced in-house,4,TRUE
+Crewe Lyceum Studio,T1053,43,Studio Space,100,Only presented/toured,5,TRUE
+Crewe Lyceum Theatre,T1053,43,Main Auditorium,681,Only presented/toured,2,TRUE
+Crucible,T1102,86,Main Auditorium,1000,More produced in-house,4,TRUE
+Darlington Hippodrome,T1022,19,Main Auditorium,1012,More presented/toured,1,TRUE
+Derby Arena,T2029,142,Main Auditorium,5000,Only presented/toured,1,TRUE
+Derngate Theatre,T1072,59,Main Auditorium,1045,Only presented/toured,1,TRUE
+Dixon Studio,T1105,89,Studio Space,100,Only presented/toured,5,TRUE
+Donmar Warehouse,T2005,129,Main Auditorium,271,Only produced in-house,1,FALSE
+Dress Circle foyer - Theatre Royal,T1076,63,Cabaret Space,150,More presented/toured,6,TRUE
+Edinburgh Playhouse,T1028,22,Main Auditorium,3035,More presented/toured,1,TRUE
+Epic Stage,T1073,60,Main Auditorium,571,More produced in-house,4,TRUE
+Everyman Theatre - Main House,T1052,42,Main Auditorium,460,More produced in-house,4,TRUE
+Everyman Theatre - Studio Space (EV1),T1052,42,Studio Space,55,More produced in-house,5,TRUE
+Everyman Theatre Main Auditorium,T2007,131,Main Auditorium,670,More presented/toured,2,TRUE
+Festival Theatre,T1015,14,Main Auditorium,1316,More produced in-house,4,TRUE
+Festival Theatre Edinburgh,T1029,23,Main Auditorium,1915,Only presented/toured,1,TRUE
+Foyer,T1093,78,Cabaret Space,120,More presented/toured,6,TRUE
+Foyle Studio,T1057,46,Subsidiary Auditorium,150,More presented/toured,5,TRUE
+Foyle Studio,T1127,103,Studio Space,40,More produced in-house,5,TRUE
+G Live,T1030,24,Main Auditorium,1734,Only presented/toured,1,TRUE
+Gallery,T2011,132,Other,300,More produced in-house,6,TRUE
+"Glasgow, King's Theatre",T1042,32,Main Auditorium,1768,More presented/toured,1,TRUE
+"Glasgow, Theatre Royal",T1042,32,Main Auditorium,1541,More presented/toured,1,TRUE
+Grand Opera House York,T1032,25,Main Auditorium,1004,More presented/toured,1,TRUE
+Green Room Bar,T1134,109,Other,80,About the same,6,TRUE
+Guildhall Theatre,T2029,142,Subsidiary Auditorium,242,Only presented/toured,3,TRUE
+Guildhall Theatre Clubrooms,T2029,142,Other,150,Only presented/toured,6,TRUE
+Harrogate Royal Hall,T1037,29,Concert Hall,1000,More presented/toured,1,TRUE
+Hexagon Theatre,T1057,46,Subsidiary Auditorium,86,More presented/toured,5,TRUE
+Irving Studio Theatre,T2007,131,Studio Space,60,More presented/toured,5,TRUE
+Jerwood Theatre Downstairs,T1097,81,Main Auditorium,387,More produced in-house,1,FALSE
+Jerwood Theatre Upstairs,T1097,81,Studio Space,99,More produced in-house,1,FALSE
+"King's Theatre",T1029,23,Main Auditorium,1319,Only presented/toured,1,TRUE
+Kings Hall Ilkley,T1008,7,Main Auditorium,524,Only presented/toured,3,TRUE
+Landmark Ilfracombe Main House,T1141,115,Main Auditorium,479,Only presented/toured,3,TRUE
+Leas Cliff Hall Theatre Folkestone,T1043,33,Main Auditorium,860,Only presented/toured,2,TRUE
+Leeds Grand Theatre,T1044,34,Main Auditorium,1466,Only presented/toured,1,TRUE
+Lefel 1,T2028,141,Studio Space,100,More produced in-house,6,TRUE
+Level 3 Lounge,T2028,141,Cabaret Space,330,More presented/toured,6,TRUE
+Level 4 foyer - Royal Concert Hall,T1076,63,Cabaret Space,150,More presented/toured,6,TRUE
+Library Theatre,T1078,65,Studio Space,177,About the same,5,TRUE
+Lilian Baylis House,T2006,130,Studio Space,200,Only produced in-house,1,FALSE
+Lilian Baylis Studio,T1048,39,Studio Space,180,About the same,5,TRUE
+Lily Pond Conservatory,T1132,107,Other,50,More produced in-house,6,TRUE
+Liverpool Empire,T1050,41,Main Auditorium,2381,More presented/toured,1,TRUE
+Lyceum,T1102,86,Main Auditorium,1100,More presented/toured,1,TRUE
+Main Auditorium,T1078,65,Main Auditorium,392,More produced in-house,4,TRUE
+Main Auditorium,T1079,66,Main Auditorium,523,More produced in-house,4,TRUE
+Main Auditorium,T1096,80,Main Auditorium,825,More produced in-house,4,TRUE
+Main House,T1005,4,Main Auditorium,850,More presented/toured,2,TRUE
+Main House,T1006,5,Main Auditorium,1850,More presented/toured,1,TRUE
+Main House,T1010,9,Main Auditorium,547,About the same,4,TRUE
+Main House,T1012,11,Main Auditorium,250,About the same,4,TRUE
+Main House,T1014,13,Concert Hall,915,More presented/toured,2,TRUE
+Main House,T1025,20,Main Auditorium,535,About the same,4,TRUE
+Main House,T1035,27,Main Auditorium,1639,More presented/toured,1,TRUE
+Main House,T1036,28,Main Auditorium,1350,More presented/toured,1,TRUE
+Main House,T1037,29,Main Auditorium,505,About the same,4,TRUE
+Main House,T1041,31,Main Auditorium,1330,Only presented/toured,1,TRUE
+Main House,T1055,44,Main Auditorium,591,More produced in-house,4,TRUE
+Main House,T1059,48,Main Auditorium,534,More presented/toured,3,TRUE
+Main House,T1061,50,Main Auditorium,2274,More presented/toured,1,TRUE
+Main House,T1062,51,Main Auditorium,491,About the same,4,TRUE
+Main House,T1063,52,Main Auditorium,486,Only presented/toured,3,TRUE
+Main House,T1067,55,Main Auditorium,601,More produced in-house,4,TRUE
+Main House,T1082,68,Main Auditorium,190,More produced in-house,5,TRUE
+Main House,T1088,74,Main Auditorium,538,More produced in-house,4,TRUE
+Main House,T1089,75,Main Auditorium,278,More produced in-house,4,TRUE
+Main House,T1093,78,Main Auditorium,507,About the same,4,TRUE
+Main House,T1103,87,Main Auditorium,452,More produced in-house,4,TRUE
+Main House,T1116,96,Main Auditorium,800,More presented/toured,2,TRUE
+Main House,T1120,99,Main Auditorium,359,More presented/toured,3,TRUE
+Main House,T1122,100,Main Auditorium,1247,Only presented/toured,1,TRUE
+Main House,T1124,101,Main Auditorium,394,More presented/toured,3,TRUE
+Main House,T1126,102,Main Auditorium,294,More produced in-house,4,TRUE
+Main House,T1132,107,Main Auditorium,255,More produced in-house,4,TRUE
+Main House,T1134,109,Main Auditorium,601,About the same,4,TRUE
+Main House,T1138,112,Main Auditorium,750,About the same,4,TRUE
+Main House,T1139,113,Main Auditorium,586,More presented/toured,3,TRUE
+Main Theatre,T1040,30,Main Auditorium,429,About the same,4,TRUE
+Main Theatre,T1049,40,Main Auditorium,163,About the same,5,TRUE
+Main Theatre,T1057,46,Main Auditorium,250,More presented/toured,3,TRUE
+Main Theatre,T1070,58,Main Auditorium,404,About the same,4,TRUE
+Main Theatre,T1084,70,Main Auditorium,632,More presented/toured,2,TRUE
+Main Theatre,T1098,82,Main Auditorium,700,More produced in-house,4,TRUE
+Main Theatre,T1101,85,Main Auditorium,514,More presented/toured,3,TRUE
+Main Theatre,T1118,97,Main Auditorium,389,About the same,4,TRUE
+Malvern Cinema,T1058,47,Cinema,303,Only presented/toured,6,TRUE
+Marina Theatre,T2013,133,Main Auditorium,775,Only presented/toured,2,TRUE
+Maritime Room,T1105,89,Studio Space,330,Only presented/toured,3,TRUE
+Market Place Participation Space,T1078,65,Studio Space,60,Only produced in-house,5,TRUE
+McCarthy Theatre,T1108,91,Studio Space,165,About the same,5,TRUE
+Mill Studio,T1139,113,Subsidiary Auditorium,80,About the same,5,TRUE
+Milton Keynes Theatre,T1065,53,Main Auditorium,1426,More presented/toured,1,TRUE
+Minerva Theatre,T1015,14,Main Auditorium,310,More produced in-house,4,TRUE
+New Alexandra Theatre Birmingham,T1112,94,Main Auditorium,1386,More presented/toured,1,TRUE
+New Theatre Cardiff Main Hall,T1107,90,Main Auditorium,1092,Only presented/toured,1,TRUE
+New Theatre Oxford,T1066,54,Main Auditorium,1773,More presented/toured,1,TRUE
+New Victoria Theatre Woking,T1068,56,Main Auditorium,1309,More presented/toured,1,TRUE
+New Wimbledon Theatre,T1069,57,Main Auditorium,1610,More presented/toured,1,TRUE
+Norwich Theatre Royal,T1074,61,Main Auditorium,1300,More presented/toured,1,TRUE
+Nottingham Playhouse,T1075,62,Main Auditorium,754,More produced in-house,4,TRUE
+NST Campus Main House,T1077,64,Main Auditorium,497,More presented/toured,3,TRUE
+NST Campus Studio,T1077,64,Other,30,About the same,6,TRUE
+NST City Main House,T1077,64,Main Auditorium,450,More produced in-house,4,TRUE
+NST City Studio,T1077,64,Studio Space,133,About the same,5,TRUE
+Oak Room,T1137,111,Studio Space,130,Only presented/toured,5,TRUE
+Old Town Hall,T1137,111,Studio Space,600,Only presented/toured,2,TRUE
+Open Air Theatre,T2017,136,Main Auditorium,1256,More produced in-house,1,FALSE
+Opera House Manchester,T1081,67,Main Auditorium,1915,More presented/toured,1,TRUE
+Outdoor Arena Theatre,T1057,46,Other,450,More presented/toured,6,TRUE
+Palace Theatre,T1105,89,Main Auditorium,611,Only presented/toured,2,TRUE
+Palace Theatre Manchester,T1085,71,Main Auditorium,1986,More presented/toured,1,TRUE
+Palace Theatre Redditch,T1086,72,Main Auditorium,420,Only presented/toured,3,TRUE
+Park 200,T1087,73,Main Auditorium,235,About the same,4,TRUE
+Park 90,T1087,73,Subsidiary Auditorium,108,More presented/toured,5,TRUE
+Patrick Centre,T1006,5,Studio Space,200,More presented/toured,3,TRUE
+Pavilion Arts Centre Main Room,T1013,12,Main Auditorium,353,More presented/toured,3,TRUE
+Peterborough New Theatre,T1141,115,Main Auditorium,1144,Only presented/toured,1,TRUE
+Play Space,T1073,60,Other,30,Only produced in-house,6,TRUE
+Playhouse - Main House,T1052,42,Main Auditorium,677,More presented/toured,2,TRUE
+Playhouse - Studio,T1052,42,Studio Space,100,More presented/toured,5,TRUE
+Princess Theatre Torquay,T1092,77,Main Auditorium,1479,More presented/toured,1,TRUE
+Quarry Theatre,T1045,36,Main Auditorium,845,More produced in-house,4,TRUE
+Queens Theatre Main House,T1141,115,Main Auditorium,655,Only presented/toured,2,TRUE
+Rehearsal Room 2,T1046,37,Studio Space,82,About the same,6,TRUE
+Rehearsal Space,T1093,78,Other,60,Only produced in-house,6,TRUE
+Restaurant,T1132,107,Other,80,More produced in-house,6,TRUE
+Richmond Theatre,T1095,79,Main Auditorium,852,More presented/toured,2,TRUE
+Royal Concert Hall,T1076,63,Main Auditorium,2258,Only presented/toured,1,TRUE
+Royal Shakespeare Theatre Stage,T1100,84,Main Auditorium,1067,More produced in-house,4,TRUE
+Royal Theatre,T1072,59,Main Auditorium,437,About the same,4,TRUE
+Salberg Studio,T1101,85,Subsidiary Auditorium,146,More presented/toured,5,TRUE
+Salisbury Arts Centre Main Space,T1101,85,Main Auditorium,320,More presented/toured,3,TRUE
+Salisbury Arts Centre White Room,T1101,85,Studio Space,60,More presented/toured,5,TRUE
+Script Library,T1012,11,Other,60,More produced in-house,6,TRUE
+Soho Downstairs,T1104,88,Cabaret Space,141,More presented/toured,6,TRUE
+Soho Upstairs,T1104,88,Studio Space,91,More presented/toured,5,TRUE
+Spiegeltent,T1015,14,Subsidiary Auditorium,110,More produced in-house,5,TRUE
+St Georges Hall,T1008,7,Concert Hall,1377,Only presented/toured,1,TRUE
+St. David's Hall Main Hall,T2028,141,Concert Hall,1956,Only presented/toured,1,TRUE
+Stage 1,T1073,60,Main Auditorium,449,About the same,4,TRUE
+Stage 2,T1073,60,Subsidiary Auditorium,179,More presented/toured,5,TRUE
+Stage 3,T1073,60,Studio Space,104,More presented/toured,5,TRUE
+"Stoke, Regent Theatre",T1129,105,Main Auditorium,1607,More presented/toured,1,TRUE
+"Stoke, Victoria Hall",T1129,105,Main Auditorium,1337,More presented/toured,1,TRUE
+Studio,T1010,9,Studio Space,148,More presented/toured,5,TRUE
+Studio,T1012,11,Studio Space,65,About the same,5,TRUE
+Studio,T1025,20,Studio Space,110,More presented/toured,5,TRUE
+Studio,T1037,29,Studio Space,80,About the same,5,TRUE
+Studio,T1046,37,Subsidiary Auditorium,322,About the same,4,TRUE
+Studio,T1055,44,Studio Space,130,About the same,5,TRUE
+Studio,T1062,51,Studio Space,98,More presented/toured,5,TRUE
+Studio,T1067,55,Studio Space,80,Only produced in-house,5,TRUE
+Studio,T1070,58,Subsidiary Auditorium,100,About the same,5,TRUE
+Studio,T1075,62,Studio Space,91,About the same,5,TRUE
+Studio,T1078,65,Studio Space,100,More presented/toured,5,TRUE
+Studio,T1086,72,Studio Space,70,Only presented/toured,5,TRUE
+Studio,T1098,82,Subsidiary Auditorium,100,More presented/toured,5,TRUE
+Studio,T1102,86,Studio Space,400,About the same,4,TRUE
+Studio,T1103,87,Studio Space,150,About the same,5,TRUE
+Studio,T1138,112,Subsidiary Auditorium,100,About the same,5,TRUE
+Studio 1,T2002,127,Main Auditorium,200,More produced in-house,4,TRUE
+Studio 2,T2002,127,Studio Space,100,More produced in-house,5,TRUE
+Studio Coliseum,T1079,66,Studio Space,50,More presented/toured,5,TRUE
+Studio Live,T1049,40,Studio Space,60,More presented/toured,5,TRUE
+Studio Poole,T1091,76,Studio Space,136,More presented/toured,5,TRUE
+Studio Theatre,T1040,30,Studio Space,135,More presented/toured,5,TRUE
+Studio Theatre,T1118,97,Subsidiary Auditorium,92,More produced in-house,5,TRUE
+Studio Theatre The Other Place,T1100,84,Studio Space,228,More produced in-house,4,TRUE
+Studio/Rehearsal Room,T1134,109,Studio Space,100,More produced in-house,5,TRUE
+Sunderland Empire,T1109,92,Main Auditorium,1988,More presented/toured,1,TRUE
+Sussex Studio,T1135,110,Studio Space,150,Only presented/toured,5,TRUE
+Swan Theatre Stage,T1100,84,Subsidiary Auditorium,461,More produced in-house,4,TRUE
+Swindon Arts Centre,T1111,93,Main Auditorium,224,Only presented/toured,3,TRUE
+The Alhambra Theatre,T1008,7,Main Auditorium,1395,Only presented/toured,1,TRUE
+The Baby Grand,T1033,26,Studio Space,132,More presented/toured,5,TRUE
+The Cinema,T1091,76,Cinema,103,Only presented/toured,6,TRUE
+The DOOR,T1007,6,Studio Space,133,More produced in-house,5,TRUE
+The Drum,T2030,143,Studio Space,200,About the same,4,TRUE
+The Festival Theatre,T1058,47,Main Auditorium,848,More presented/toured,2,TRUE
+The Forum,T1133,108,Studio Space,120,Only presented/toured,5,TRUE
+The Forum Theatre,T1058,47,Subsidiary Auditorium,827,More presented/toured,2,TRUE
+The HOUSE,T1007,6,Main Auditorium,816,About the same,4,TRUE
+The Lab,T2030,143,Studio Space,60,More presented/toured,5,TRUE
+The London Coliseum,T2006,130,Main Auditorium,2358,About the same,1,FALSE
+The Lyric,T2030,143,Main Auditorium,1296,More presented/toured,1,TRUE
+The Matcham Auditorium,T1033,26,Main Auditorium,1063,More presented/toured,1,TRUE
+The Morris Space,T1087,73,Other,60,About the same,6,TRUE
+The Orchard Theatre,T1083,69,Main Auditorium,980,Only presented/toured,2,TRUE
+The Round,T1108,91,Main Auditorium,404,About the same,4,TRUE
+The STUDIO,T1007,6,Studio Space,292,About the same,4,TRUE
+The Studio,T1008,7,Studio Space,202,Only presented/toured,3,TRUE
+The Studio,T1029,23,Studio Space,160,Only presented/toured,5,TRUE
+The Studio,T1060,49,Studio Space,166,More presented/toured,5,TRUE
+The Studio,T1096,80,Studio Space,85,About the same,5,TRUE
+The Studio,T1132,107,Studio Space,50,Only produced in-house,5,TRUE
+The Theatre,T1060,49,Main Auditorium,1194,More presented/toured,1,TRUE
+Theatr Colwyn,T1128,104,Main Auditorium,333,Only presented/toured,3,TRUE
+Theatre,T1046,37,Main Auditorium,902,About the same,4,TRUE
+Theatre,T2015,135,Main Auditorium,1000,More produced in-house,4,TRUE
+Theatre 1,T2011,132,Main Auditorium,447,About the same,4,TRUE
+Theatre 2,T2011,132,Studio Space,130,About the same,5,TRUE
+Theatre Poole,T1091,76,Main Auditorium,669,More presented/toured,2,TRUE
+Theatre Royal Brighton,T1119,98,Main Auditorium,960,More presented/toured,2,TRUE
+Theatre Royal Nottingham Main Hall,T1076,63,Main Auditorium,1107,More presented/toured,1,TRUE
+Theatre Soho,T1104,88,Main Auditorium,179,About the same,5,TRUE
+University of Bolton Stadium - Lion of Vienna Suite,T1078,65,Cabaret Space,344,Only presented/toured,6,TRUE
+University of Bolton Stadium - The Premier Suite,T1078,65,Concert Hall,870,Only presented/toured,2,TRUE
+Venue Cymru Arena,T1128,104,Concert Hall,2500,Only presented/toured,1,TRUE
+Venue Cymru Theatre,T1128,104,Main Auditorium,1450,Only presented/toured,1,TRUE
+Warwick Arts Centre Hall,T1131,106,Main Auditorium,1460,More presented/toured,1,TRUE
+Warwick Arts Centre Helen Martin Studio,T1131,106,Studio Space,120,More presented/toured,5,TRUE
+Warwick Arts Centre Studio,T1131,106,Studio Space,200,More presented/toured,3,TRUE
+Warwick Arts Centre Theatre,T1131,106,Subsidiary Auditorium,589,More presented/toured,3,TRUE
+Watford Colosseum,T1133,108,Main Auditorium,2441,Only presented/toured,1,TRUE
+Wells Room,T1017,16,Studio Space,100,Only presented/toured,6,TRUE
+Weston Theatre,T1127,103,Main Auditorium,290,More produced in-house,4,TRUE
+White Rock Theatre,T1135,110,Main Auditorium,1112,Only presented/toured,1,TRUE
+Wycombe Swan,T1137,111,Main Auditorium,1076,Only presented/toured,1,TRUE
+Wyvern Theatre,T1111,93,Main Auditorium,635,Only presented/toured,2,TRUE

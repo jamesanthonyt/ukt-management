@@ -9,12 +9,13 @@
       <% end %>
   </li>
   <li class="list-group-item">
-    <strong>Include in reporting:</strong>
-      <% if @theatre.include == true %>
-        <span style="color: green;">Yes</span>
+    <strong>
+      <% if @theatre.include == false %>
+        <span style="color: red;">Excluded from reporting</span>
       <% else %>
-        <span style="color: red;">No</span>
+        <span style="color: green;">Included in reporting</span>
       <% end %>
+    </strong>
   </li>
   <li class="list-group-item">
     <strong>Status:</strong> <%= status(@theatre) %>

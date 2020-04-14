@@ -3,5 +3,11 @@ class Theatre < ApplicationRecord
   has_many :performance_spaces
   has_many :af_venues, through: :source_org
   validates :name, presence: true, uniqueness: true
-  validates :source_org_id, uniqueness: true
+  validates :source_org_id, uniqueness: { allow_blank: true }
+  validates :management, inclusion: { in: [
+    'Independent',
+    'ATG',
+    'SellaDoor',
+    'HQ Theatres'
+  ] }
 end
