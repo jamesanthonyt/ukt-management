@@ -21,4 +21,22 @@ class PerformanceSpace < ApplicationRecord
     'Only presented/toured'
   ] }
   validates :grouping, numericality: { only_integer: true }
+
+  def self.import_performance_spaces
+    require 'csv'
+    PerformanceSpace.destroy_all
+    CSV.foreach(Rails.root.join('lib/UKTPerformancespaces.csv'), headers: true) do |row|
+      PerformanceSpace.create!(
+        id: row[0],
+        name: row[1],
+        theatre_id: row[2],
+        space_type: row[3],
+        capacity: row[4],
+        programme: row[5],
+        grouping: row[6],
+        include: row[7],
+        notes: row[8]
+      )
+    end
+  end
 end

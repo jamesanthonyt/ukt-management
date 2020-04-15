@@ -31,12 +31,12 @@
             <% end %>
             <td>
               <% if venue.af_venue_mapping.present? %>
-                <%= link_to 'Remove mapping',
+                <%= link_to_if venue.deleted == false, 'Remove mapping',
                   theatre_af_venue_af_venue_mapping_path(@theatre, venue, venue.af_venue_mapping),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %>
               <% else %>
-                <%= link_to "Map to perf space",
+                <%= link_to_if venue.deleted == false, "Map to perf space",
                   new_theatre_af_venue_af_venue_mapping_path(@theatre, venue, venue.af_venue_mapping) %>
               <% end %>
             </td>
