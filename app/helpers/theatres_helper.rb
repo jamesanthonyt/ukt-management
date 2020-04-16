@@ -16,24 +16,25 @@ module TheatresHelper
     end
   end
 
-  def count_af_venue_mappings(theatre)
-    AfVenueMapping.joins(:performance_space)
-                  .where(performance_spaces: { theatre_id: theatre.id }).count
-  end
-
   def status(theatre)
-    if count_af_venue_mappings(theatre) > 0 && all_venues_mapped?(theatre)
-      '<span style="color: green">Ready for reporting</span>'.html_safe
-    elsif theatre.performance_spaces.present?
-      '<span style="color: orange">Performance spaces require mapping</span>'.html_safe
-    elsif theatre.source_org.present?
-      '<span style="color: orange">Performance spaces require defining</span>'.html_safe
-    else
+    if theatre.include == false
+      '<span style="color: red; font-weight: bold;">Theatre removed from project</span>'.html_safe
+    elsif theatre.source_org.nil?
       '<span style="color: red">Theatre requires onboarding</span>'.html_safe
+    elsif theatre.performance_spaces.empty?
+      '<span style="color: orange">Performance spaces require defining</span>'.html_safe
+    elsif any_performance_spaces_unmapped?(theatre)
+      '<span style="color: orange">Performance spaces require mapping</span>'.html_safe
+    else
+      '<span style="color: green">Ready for reporting</span>'.html_safe
     end
   end
 
-  def all_venues_mapped?(theatre)
-    theatre.af_venues.count == count_af_venue_mappings(theatre)
+  def any_performance_spaces_unmapped?(theatre)
+    mappings = []
+    theatre.performance_spaces.each do |space|
+      mappings << space.af_venue_mappings.present?
+    end
+    mappings.include?(false)
   end
 end

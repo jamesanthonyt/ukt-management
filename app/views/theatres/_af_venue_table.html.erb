@@ -22,8 +22,20 @@
       <tbody>
         <% @af_venues.each do |venue| %>
           <tr>
-            <td><%= venue.name %></td>
-            <td><%= venue.deleted == false %></td>
+            <td>
+              <% if venue.name.nil? %>
+                [BLANK]
+              <% else %>
+                <%= venue.name %>
+              <% end %>
+            </td>
+            <td>
+              <% if venue.deleted %>
+                Removed from B/O
+              <% else %>
+                Available
+              <% end %>
+            </td>
             <% if venue.af_venue_mapping.present? %>
               <td><%= venue.af_venue_mapping.performance_space.name %></td>
             <% else %>

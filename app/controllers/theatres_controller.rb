@@ -4,7 +4,7 @@ class TheatresController < ApplicationController
   before_action :used_source_orgs, only: [:new, :edit]
 
   def index
-    @theatres = Theatre.all
+    @theatres = Theatre.all.order(:name)
   end
 
   def show

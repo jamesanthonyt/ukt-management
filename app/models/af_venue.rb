@@ -24,6 +24,7 @@ class AfVenue < ApplicationRecord
     af_venues.each do |venue|
       if csv.find { |row| (row['orgsrcid'].to_s == venue.source_org_id.to_s && row['venue'].to_s == venue.name.to_s) } == nil
         venue.update!(deleted: true)
+        venue.af_venue_mapping.destroy
       end
     end
   end

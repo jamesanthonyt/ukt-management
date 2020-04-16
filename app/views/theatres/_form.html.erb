@@ -6,9 +6,11 @@
     'HQ Theatres',
     'SellaDoor'
   ] %>
-  <%= f.association :source_org, label: "AF Source Org", collection:
-    @source_orgs, disabled: @used_src_org_ids
-   %>
+  <% if @theatre.source_org.present? %>
+    <%= f.association :source_org, label: "AF Source Org", disabled: true %>
+  <% else %>
+    <%= f.association :source_org, label: "AF Source Org", collection: @source_orgs, disabled: @used_src_org_ids %>
+  <% end %>
   <% if @theatre.persisted? %>
     <%= f.input :include, label: "Include in project?" %>
   <% end %>
