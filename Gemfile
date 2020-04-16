@@ -39,6 +39,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'breadcrumbs_on_rails'
+gem 'devise'
 
 group :production do
   gem 'pg'

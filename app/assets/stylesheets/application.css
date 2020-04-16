@@ -20,5 +20,13 @@ h1, h2, p {
   font-family: 'Roboto';
 }
 
+body {
+  background: rgba(200,200,200,0.3);
+}
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
 
 

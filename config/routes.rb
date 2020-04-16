@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'theatres#index'
+  devise_for :users, controllers: { passwords: 'passwords' }
+  root to: 'pages#home'
 
   resources :theatres, except: :destroy do
     resources :performance_spaces, except: [:index, :destroy]

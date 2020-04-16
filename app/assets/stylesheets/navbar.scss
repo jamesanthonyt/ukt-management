@@ -1,0 +1,23 @@
+.navbar-ukt {
+  justify-content: space-between;
+  background: white;
+  padding: 5px 0px 5px 0px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.navbar-ukt .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-ukt .logo-links {
+  display: flex;
+  align-items: center;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+
